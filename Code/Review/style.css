@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root {
+    --main-color1: #023047;
+    --main-color2: #98C1D9;
+    --main-color3: #E5E5E5;
+    --main-color4: #EC8757;
+    --sub-color1: #0D83AE;
+    --sub-color2: #BBF085;
+    --sub-color3: #F24726;
+}
+
+body {
+    background-image: linear-gradient(to left, #98C1D9, #023047);
+}
+
+h1 {
+    text-align: center;
+    color: var(--main-color3);
+}
+
+.container {
+    background-image: url("images/1.png");
+    width: 70%;
+    height: 00vh;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0D83AE;
+    overflow: visible;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.cards {
+    background-color: #E5E5E5;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.cards .cardsquestion p {
+    background-color: #EC8757;
+    border-radius: 5px;
+    padding: 10px;
+    color: #023047;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.cards .cardsanswer {
+    padding-left: 18px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.cards .cardsanswer p {
+    border: 1px solid #023047;
+    width: 90%;
+    padding: 10px 50px;
+    border-radius: 20px;
+}
+
+
+/*scroll */
+
+.appear {
+    position: relative;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.appear.active {
+    position: relative;
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+.answer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-color2);
+    height: 12%;
+    font-size: large;
+    color: var(--main-color1);
+    font-weight: bold;
+}
+
+
+.answer p{
+    padding: 20px;
+}
